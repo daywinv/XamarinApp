@@ -19,5 +19,15 @@ namespace XamarinApp
         {
             Navigation.PushAsync(new KurkPage());
         }
+
+        private void viewsButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ViewsPage());
+        }
+
+        private void courseButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Course());
+        }
     }
 }

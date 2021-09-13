@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp.ViewsPage">
+    <!--Pages can be added as references or inline-->
+    <ContentPage Title="Tab 1">
+        <ScrollView>
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Editor HorizontalOptions="FillAndExpand" HeightRequest="150" Placeholder="Editor view (Max 250)" Margin="10" MaxLength="250"></Editor>
+                <TimePicker HorizontalOptions="FillAndExpand" Margin="10"></TimePicker>
+                <WebView Source="https://www.bokt.nl/forums/viewtopic.php?t=942334" HorizontalOptions="FillAndExpand" HeightRequest="600"></WebView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage>
+
+    <ContentPage Title="Tab 2">
+        <ScrollView>
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Slider x:Name="slider1" HorizontalOptions="FillAndExpand" Margin="10" ValueChanged="slider1_ValueChanged" Maximum="100" Minimum="0"></Slider>
+                <Label x:Name="label1" Text="Text" FontSize="Body" TextColor="Black" Margin="10"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label x:Name="label2" Text="Text" FontSize="Body" TextColor="Black" VerticalOptions="Center" Margin="10"></Label>
+                    <Stepper x:Name="stepper1" ValueChanged="stepper1_ValueChanged"></Stepper>
+                </StackLayout>
+                <Switch IsToggled="False" x:Name="switch1" HorizontalOptions="Start" Margin="10" Toggled="switch1_Toggled"></Switch>
+                <CheckBox IsVisible="False" Margin="10" x:Name="checkbox1"></CheckBox>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage>
+
+    <ContentPage Title="Tab 3">
+        <ScrollView>
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Button x:Name="button1" Text="Button" HorizontalOptions="Center" Margin="10"></Button>
+                <ProgressBar HorizontalOptions="FillAndExpand" Margin="10" x:Name="progressbar1" Progress="0.2"></ProgressBar>
+                <DatePicker Margin="10"></DatePicker>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage>
+
+    <ContentPage Title="Tab 4">
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="Center">
+                <Entry x:Name="entry1" Text="" Placeholder="123" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Margin="0" WidthRequest="50" HorizontalTextAlignment="Center"></Entry>
+                <Picker x:Name="picker1" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Margin="0" SelectedIndex="1" HorizontalTextAlignment="Center">
+                    <Picker.Items>
+                        <x:String>+</x:String>
+                        <x:String>-</x:String>
+                        <x:String>/</x:String>
+                        <x:String>x</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="entry2" Text="" Placeholder="123" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Margin="0" WidthRequest="50" HorizontalTextAlignment="Center"></Entry>
+            </StackLayout>
+            <Button Text="Calculate" x:Name="button2" Clicked="button2_Clicked" HorizontalOptions="Center"></Button>
+            <Label x:Name="label3" Text="123" TextColor="Black" FontSize="Body" HorizontalOptions="Center"></Label>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

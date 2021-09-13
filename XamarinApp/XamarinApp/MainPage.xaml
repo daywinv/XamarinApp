@@ -19,7 +19,11 @@
                 </FormattedString>
             </Label.FormattedText>
         </Label>
-        <Button Text="Kurk" Clicked="kurkButton_Clicked"></Button>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Kurk" Clicked="kurkButton_Clicked" HorizontalOptions="Center" Margin="10,0"></Button>
+            <Button Text="Views" Clicked="viewsButton_Clicked" HorizontalOptions="Center" Margin="0"></Button>
+            <Button Text="Course" Clicked="courseButton_Clicked" HorizontalOptions="Center" Margin="0"></Button>
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>
