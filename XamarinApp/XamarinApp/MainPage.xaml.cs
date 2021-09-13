@@ -14,5 +14,10 @@ namespace XamarinApp
         {
             InitializeComponent();
         }
+
+        public void kurkButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new KurkPage());
+        }
     }
 }

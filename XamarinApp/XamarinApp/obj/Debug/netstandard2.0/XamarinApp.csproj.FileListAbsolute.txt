@@ -1,0 +1,16 @@
+C:\Users\daywi\source\repos\XamarinApp\XamarinApp\XamarinApp\bin\Debug\netstandard2.0\XamarinApp.deps.json
+C:\Users\daywi\source\repos\XamarinApp\XamarinApp\XamarinApp\bin\Debug\netstandard2.0\XamarinApp.dll
+C:\Users\daywi\source\repos\XamarinApp\XamarinApp\XamarinApp\bin\Debug\netstandard2.0\ref\XamarinApp.dll
+C:\Users\daywi\source\repos\XamarinApp\XamarinApp\XamarinApp\bin\Debug\netstandard2.0\XamarinApp.pdb
+C:\Users\daywi\source\repos\XamarinApp\XamarinApp\XamarinApp\obj\Debug\netstandard2.0\XamarinApp.csproj.AssemblyReference.cache
+C:\Users\daywi\source\repos\XamarinApp\XamarinApp\XamarinApp\obj\Debug\netstandard2.0\XamarinApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\daywi\source\repos\XamarinApp\XamarinApp\XamarinApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\daywi\source\repos\XamarinApp\XamarinApp\XamarinApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\daywi\source\repos\XamarinApp\XamarinApp\XamarinApp\obj\Debug\netstandard2.0\XamarinApp.AssemblyInfoInputs.cache
+C:\Users\daywi\source\repos\XamarinApp\XamarinApp\XamarinApp\obj\Debug\netstandard2.0\XamarinApp.AssemblyInfo.cs
+C:\Users\daywi\source\repos\XamarinApp\XamarinApp\XamarinApp\obj\Debug\netstandard2.0\XamarinApp.csproj.CoreCompileInputs.cache
+C:\Users\daywi\source\repos\XamarinApp\XamarinApp\XamarinApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\daywi\source\repos\XamarinApp\XamarinApp\XamarinApp\obj\Debug\netstandard2.0\XamarinApp.dll
+C:\Users\daywi\source\repos\XamarinApp\XamarinApp\XamarinApp\obj\Debug\netstandard2.0\ref\XamarinApp.dll
+C:\Users\daywi\source\repos\XamarinApp\XamarinApp\XamarinApp\obj\Debug\netstandard2.0\XamarinApp.pdb
+C:\Users\daywi\source\repos\XamarinApp\XamarinApp\XamarinApp\obj\Debug\netstandard2.0\KurkPage.xaml.g.cs
