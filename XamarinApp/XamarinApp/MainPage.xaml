@@ -4,26 +4,25 @@
              x:Class="XamarinApp.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#8DB255" Padding="0, 0, 0, 24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
         <StackLayout Orientation="Horizontal">
-            <Button Text="Kurk" Clicked="kurkButton_Clicked" HorizontalOptions="Center" Margin="10,0"></Button>
+            <Button Text="Kurk" Clicked="kurkButton_Clicked" HorizontalOptions="Center" Margin="10,0,0,0"></Button>
             <Button Text="Views" Clicked="viewsButton_Clicked" HorizontalOptions="Center" Margin="0"></Button>
             <Button Text="Course" Clicked="courseButton_Clicked" HorizontalOptions="Center" Margin="0"></Button>
         </StackLayout>
+        <CollectionView ItemsSource="{Binding}" SelectionMode="Single" SelectionChanged="Item_Selected">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="2"></GridItemsLayout>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Padding="10,0">
+                        <Image Source="{Binding Path=ImageUri}" Aspect="AspectFit" HorizontalOptions="Center"></Image>
+                        <Label Text="{Binding Path=Name}" FontSize="Large"></Label>
+                        <Label Text="{Binding Path=Description}" FontSize="Small"></Label>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
     </StackLayout>
 
 </ContentPage>

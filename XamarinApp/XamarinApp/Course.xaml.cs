@@ -16,5 +16,15 @@ namespace XamarinApp
         {
             InitializeComponent();
         }
+        public Course(Product product)
+        {
+            InitializeComponent();
+            BindingContext = product;
+        }
+
+        private void orderBtn_Clicked(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

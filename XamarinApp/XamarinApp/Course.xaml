@@ -4,9 +4,19 @@
              x:Class="XamarinApp.Course">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal" Margin="10">
+                <Label Text="Name" FontSize="Large"></Label>
+                <Label Text="{Binding Path=Name}" FontSize="Large"></Label>
+            </StackLayout>
+            <StackLayout Margin="10">
+                <Label Text="Description" FontSize="Large"></Label>
+                <Label FontSize="Body"  Text="{Binding Path=Description}"></Label>
+            </StackLayout>
+            <Image Source="{Binding Path=ImageUri}" HorizontalOptions="FillAndExpand" VerticalOptions="Start" Aspect="AspectFit"></Image>
+            <RelativeLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Margin="10">
+                <Button Text="Order" x:Name="orderBtn" Clicked="orderBtn_Clicked"></Button>
+                <Button Text="Favorite" RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView,ElementName=orderBtn, Property=X, Constant=100}"></Button>
+            </RelativeLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
